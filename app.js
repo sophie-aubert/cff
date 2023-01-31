@@ -10,7 +10,7 @@ const afficheGaresArrivees = document.querySelector("#board");
 
 const recupStation = ((ville,nb) => {
     
-    fetch(`http://transport.opendata.ch/v1/stationboard?station=${ville}}&limit=${nb}`)
+    fetch(`https://transport.opendata.ch/v1/stationboard?station=${ville}}&limit=${nb}`)
     
 .then((resultat) => {
     return resultat.json();
